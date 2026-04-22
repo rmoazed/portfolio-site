@@ -16,7 +16,7 @@
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     h1 {
@@ -61,6 +61,11 @@
       margin-top: 8px;
     }
 
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.2s ease;
+    }
+
     .card p {
       margin-bottom: 12px;
     }
@@ -70,7 +75,7 @@
 <body>
   <div class="container">
 
-    <h1>Roshan Moazed</h1>
+    <h2>Roshan Moazed</h2>
     <p>Applied Mathematics MS Student @ Northeastern | Data Science and Machine Learning</p>
 
     <div class="links">
@@ -83,20 +88,34 @@
       I am a Master's student in the Applied Mathematics program at Northeastern University graduating in May, 2027. I have experience building machine learning systems for real-world applications and am particularly interested in retail and e-commerce. I am especially drawn to problems involving customer behavior, personalization, and recommendation systems.
     </p>
 
+    <h2>Featured Project</h2>
+
+    <div class="card">
+      <h3>E-Commerce Recommender System</h3>
+      <p>
+        Built an end-to-end recommendation system using real e-commerce interaction data. Compared popularity-based simple and weighted recommendations with item-based collaborative filtering and deployed the final system in an interactive Streamlit dashboard. The collaborative filtering model improved Hit Rate at 10 by about 4.3x over the baseline.
+      </p>
+
+      <p style="font-size: 14px; color: #94a3b8;">
+      Note: Some apps may take a few seconds to load or require reactivation if they   have been inactive.
+      </p>
+
+      <a href="https://ecommerce-recommender-system-fcffnpilbvxhfzpdaud5ft.streamlit.app/" target="_blank">View Live App</a> |
+      <a href="https://github.com/rmoazed/Ecommerce-Recommender-System" target="_blank">GitHub</a>
+
+      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+        App Preview
+      </p>
+      <img src="portfolio_images/dashboard_screenshot_1.png" style="width:100%; border-radius:10px; margin-top:15px;">
+      <img src="portfolio_images/dashboard_screenshot_2.png" style="width:100%; border-radius:10px; margin-top:15px;">
+    </div>
+
+
     <h2>Projects</h2>
 
     <p style="font-size: 14px; color: #94a3b8;">
       Note: Some apps may take a few seconds to load or require reactivation if they   have been inactive.
     </p>
-
-    <div class="card">
-        <h3>E-Commerce Recommender System</h3>
-        <p>
-          Built an end-to-end recommendation system using real e-commerce interaction data. Compared popularity-based simple and weighted recommendations with item-based collaborative filtering and deployed the final system in an interactive Streamlit dashboard. The collaborative filtering model improved Hit Rate at 10 by about 4.3x over the baseline.
-        </p>
-        <a href="https://ecommerce-recommender-system-fcffnpilbvxhfzpdaud5ft.streamlit.app/">View App</a> |
-        <a href="https://github.com/rmoazed/Ecommerce-Recommender-System">GitHub</a>
-       </div>
 
     <div class="card">
         <h3>Customer Segmentation and Targeted Marketing</h3>
@@ -105,6 +124,13 @@
         </p>
         <a href="https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/">View App</a> |
         <a href="https://github.com/rmoazed/Customer-Segmentation-for-Targeted-Marketing">GitHub</a>
+
+      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+        App Preview
+      </p>
+
+      <img src="portfolio_images/dashboard_preview.png" style="width:100%; border-radius:10px; margin-top:15px;">
+      <img src="portfolio_images/pca_plot.png" style="width:100%; border-radius:10px; margin-top:15px;">
       </div>
 
     <div class="card">
@@ -114,6 +140,12 @@
         </p>
         <a href="https://bike-rental-revenue-optimization-3ezz8dswejjajsle7fabh2.streamlit.app/">View App</a> |
         <a href="https://github.com/rmoazed/Bike-Rental-Revenue-Optimization">GitHub</a>
+
+      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+        App Preview
+      </p>
+
+      <img src="portfolio_images/app_preview" style="width:100%; border-radius:10px; margin-top:15px;">
       </div>
 
     <div class="card">
@@ -123,6 +155,11 @@
         </p>
         <a href="https://brain-hemorrhage-segmentation-app-fxuflb7mf9tyusncpubyjp.streamlit.app/">View App</a> |
         <a href="https://github.com/rmoazed/Brain-Hemorrhage-Segmentation-App">GitHub</a>
+
+      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+        App Preview
+      </p>
+      <img src="portfolio_images/interface_pic.png" style="width:100%; border-radius:10px; margin-top:15px;">
      </div>
 
     <h2>Skills</h2>
