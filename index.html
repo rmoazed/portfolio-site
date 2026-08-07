@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <title>Roshan Moazed | Data Scientist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <style>
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -42,13 +49,9 @@
       border-radius: 12px;
     }
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    .links a {
-      margin-right: 15px;
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.2s ease;
     }
 
     .card h3 {
@@ -56,18 +59,26 @@
       margin-bottom: 10px;
     }
 
+    .card p {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links a {
+      margin-right: 15px;
+    }
+
     .card a {
       display: inline-block;
       margin-top: 8px;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      transition: 0.2s ease;
-    }
-
-    .card p {
-      margin-bottom: 12px;
     }
 
     .tag {
@@ -84,187 +95,610 @@
       color: #f8fafc;
       font-weight: 600;
     }
+
+    .project-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .preview-label {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .app-note {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
   </style>
+
 </head>
 
+
 <body>
+
   <div class="container">
 
+
+    <!-- HEADER -->
+
     <h1>Roshan Moazed</h1>
-    <p>Applied Mathematics MS Student @ Northeastern | Data Science and Machine Learning</p>
+
+    <p>
+      Applied Mathematics MS Student @ Northeastern |
+      Data Science, Machine Learning & AI
+    </p>
 
     <div class="links">
-      <a href="https://github.com/rmoazed" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/roshan-moazed-a38b57139/" target="_blank">LinkedIn</a>
-      <a href="files/moazed_roshan_resume.pdf" target="_blank">Resume</a>
+
+      <a
+        href="https://github.com/rmoazed"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/roshan-moazed-a38b57139/"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="files/moazed_roshan_resume.pdf"
+        target="_blank"
+      >
+        Resume
+      </a>
 
     </div>
 
+
+    <!-- ABOUT -->
+
     <h2>About</h2>
+
     <p>
-      I am a Master's student in the Applied Mathematics program at Northeastern University graduating in May, 2027. I have experience building machine learning systems for real-world applications and am particularly interested in retail and e-commerce. I am especially drawn to problems involving customer behavior, personalization, recommendation systems, forecasting, and business decision tools.
+      I am a Master's student in Applied Mathematics at Northeastern
+      University graduating in May 2027, with experience building
+      end-to-end machine learning and AI systems for real-world
+      applications. My projects span forecasting, recommendation
+      systems, optimization, customer analytics, computer vision,
+      and conversational AI.
     </p>
+
+    <p>
+      I am particularly interested in applying machine learning to
+      problems involving personalization, customer behavior,
+      forecasting, intelligent decision systems, and business
+      optimization. I enjoy projects that combine rigorous modeling
+      with practical deployment, evaluation, and interactive tools
+      that translate model outputs into useful decisions.
+    </p>
+
+
+    <!-- FEATURED PROJECTS -->
 
     <h2>Featured Projects</h2>
 
-    <p style="font-size: 14px; color: #94a3b8;">
-      Note: Some apps may take a few seconds to load or require reactivation if they have been inactive.
+    <p class="app-note">
+      Note: Some apps may take a few seconds to load or require
+      reactivation if they have been inactive.
     </p>
 
+
+    <!-- 1. RETAIL FORECASTING -->
+
     <div class="card">
-      <h3>Retail Demand Forecasting & Inventory Optimization Dashboard</h3>
+
+      <h3>
+        Retail Demand Forecasting & Inventory Optimization Dashboard
+      </h3>
+
       <p>
-        Built an end-to-end retail demand forecasting system using the Favorita grocery sales dataset. The project compares XGBoost models against naive time-series baselines, engineers lag and rolling-window features, and translates forecasts into inventory recommendations through an interactive Streamlit dashboard.
+        Built an end-to-end retail demand forecasting system using
+        the Favorita grocery sales dataset. The project compares
+        XGBoost models against naive time-series baselines, engineers
+        lag and rolling-window features, and translates forecasts
+        into inventory recommendations through an interactive
+        Streamlit dashboard.
       </p>
 
       <p>
-        The dashboard includes a forecasting command center, actual-vs-predicted sales visualizations, product-family comparisons, feature importance analysis, and an inventory simulator that adjusts recommendations based on volatility and business risk.
+        The dashboard includes a forecasting command center,
+        actual-vs-predicted sales visualizations, product-family
+        comparisons, feature importance analysis, and an inventory
+        simulator that adjusts recommendations based on volatility
+        and business risk.
       </p>
 
       <div>
+
         <span class="tag">Python</span>
         <span class="tag">XGBoost</span>
         <span class="tag">Time Series</span>
         <span class="tag">Streamlit</span>
         <span class="tag">Retail Analytics</span>
         <span class="tag">Forecasting</span>
+        <span class="tag">Inventory Optimization</span>
+
       </div>
 
-      <a href="https://retail-demand-forecasting-and-inventory-optimization-sj5pzd4tv.streamlit.app/" target="_blank">View App</a> |
-      <a href="https://github.com/rmoazed/retail-demand-forecasting-and-inventory-optimization" target="_blank">GitHub</a>
+      <a
+        href="https://retail-demand-forecasting-and-inventory-optimization-sj5pzd4tv.streamlit.app/"
+        target="_blank"
+      >
+        View App
+      </a>
 
-      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+      |
+
+      <a
+        href="https://github.com/rmoazed/retail-demand-forecasting-and-inventory-optimization"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <p class="preview-label">
         App Preview
       </p>
 
-      <img src="portfolio_images/dash_1.png" style="width:100%; border-radius:10px; margin-top:15px;">
-      <img src="portfolio_images/inventory_sim.png" style="width:100%; border-radius:10px; margin-top:15px;">
+      <img
+        src="portfolio_images/dash_1.png"
+        alt="Retail demand forecasting dashboard"
+        class="project-image"
+      >
+
+      <img
+        src="portfolio_images/inventory_sim.png"
+        alt="Inventory optimization simulator"
+        class="project-image"
+      >
+
     </div>
 
+
+    <!-- 2. MEMORY-AUGMENTED CONVERSATIONAL AI -->
+
     <div class="card">
-      <h3>E-Commerce Recommender System</h3>
+
+      <h3>Memory-Augmented Conversational AI System</h3>
+
       <p>
-        Built an end-to-end recommendation system using real e-commerce interaction data. Compared popularity-based simple and weighted recommendations with item-based collaborative filtering and deployed the final system in an interactive Streamlit dashboard. The collaborative filtering model improved Hit Rate at 10 by about 4.3x over the baseline.
+        Built a modular memory-augmented conversational AI framework
+        to investigate how different memory extraction and management
+        strategies affect long-term personalization in LLM-powered
+        chatbots.
+      </p>
+
+      <p>
+        The system compares three memory extraction approaches:
+        semantic similarity using text embeddings, a supervised
+        Support Vector Machine classifier, and LLM-based structured
+        extraction. Messages identified as meaningful long-term
+        memories are embedded and stored in Pinecone for semantic
+        retrieval during future conversations.
+      </p>
+
+      <p>
+        I also implemented and evaluated two memory-management
+        architectures: a baseline system that independently stores
+        extracted memories and a conflict-aware system that detects
+        duplicate or contradictory information and updates obsolete
+        memories. In retrieval evaluation, the conflict-aware
+        architecture improved accuracy from 60% to 80% for both the
+        semantic-similarity and LLM extraction systems.
+      </p>
+
+      <p>
+        The accompanying Streamlit application provides an interactive
+        chatbot, live visibility into memory extraction and storage,
+        a semantic retrieval demonstration, memory replay tools, and
+        quantitative comparisons across model architectures.
       </p>
 
       <div>
+
+        <span class="tag">Python</span>
+        <span class="tag">NLP</span>
+        <span class="tag">LLMs</span>
+        <span class="tag">OpenAI API</span>
+        <span class="tag">Pinecone</span>
+        <span class="tag">Vector Search</span>
+        <span class="tag">SVM</span>
+        <span class="tag">Text Embeddings</span>
+        <span class="tag">Hugging Face</span>
+        <span class="tag">Streamlit</span>
+
+      </div>
+
+      <a
+        href="https://memory-extraction-chatbot-kgvrscdlmwj9lrh6e9sjtc.streamlit.app/"
+        target="_blank"
+      >
+        View App
+      </a>
+
+      |
+
+      <a
+        href="https://github.com/rmoazed/Memory-Augmented-Conversational-AI-System"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <p class="preview-label">
+        App Preview
+      </p>
+
+      <img
+        src="images/app_photo_1.png"
+        alt="Memory-Augmented Conversational AI chatbot interface"
+        class="project-image"
+      >
+
+      <img
+        src="images/app_photo_2.png"
+        alt="Memory extraction and processing interface"
+        class="project-image"
+      >
+
+      <img
+        src="images/app_photo_retrieval.png"
+        alt="Semantic memory retrieval demonstration"
+        class="project-image"
+      >
+
+    </div>
+
+
+    <!-- 3. RECOMMENDER SYSTEM -->
+
+    <div class="card">
+
+      <h3>E-Commerce Recommender System</h3>
+
+      <p>
+        Built an end-to-end recommendation system using real
+        e-commerce interaction data. Compared popularity-based
+        simple and weighted recommendations with item-based
+        collaborative filtering and deployed the final system in
+        an interactive Streamlit dashboard.
+      </p>
+
+      <p>
+        The collaborative filtering model improved Hit Rate at 10
+        by approximately 4.3x over the popularity baseline,
+        demonstrating the value of personalized behavioral signals
+        for product recommendation.
+      </p>
+
+      <div>
+
         <span class="tag">Python</span>
         <span class="tag">Recommendation Systems</span>
         <span class="tag">Collaborative Filtering</span>
+        <span class="tag">Cosine Similarity</span>
         <span class="tag">Streamlit</span>
         <span class="tag">E-Commerce</span>
+
       </div>
 
-      <a href="https://ecommerce-recommender-system-fcffnpilbvxhfzpdaud5ft.streamlit.app/" target="_blank">View App</a> |
-      <a href="https://github.com/rmoazed/Ecommerce-Recommender-System" target="_blank">GitHub</a>
+      <a
+        href="https://ecommerce-recommender-system-fcffnpilbvxhfzpdaud5ft.streamlit.app/"
+        target="_blank"
+      >
+        View App
+      </a>
 
-      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+      |
+
+      <a
+        href="https://github.com/rmoazed/Ecommerce-Recommender-System"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <p class="preview-label">
         App Preview
       </p>
-      <img src="portfolio_images/dashboard_screenshot_1.png" style="width:100%; border-radius:10px; margin-top:15px;">
-      <img src="portfolio_images/dashboard_screenshot_2.png" style="width:100%; border-radius:10px; margin-top:15px;">
+
+      <img
+        src="portfolio_images/dashboard_screenshot_1.png"
+        alt="E-commerce recommendation dashboard"
+        class="project-image"
+      >
+
+      <img
+        src="portfolio_images/dashboard_screenshot_2.png"
+        alt="Recommendation system results"
+        class="project-image"
+      >
+
     </div>
+
+
+    <!-- PROJECTS -->
 
     <h2>Projects</h2>
 
-    <p style="font-size: 14px; color: #94a3b8;">
-      Note: Some apps may take a few seconds to load or require reactivation if they have been inactive.
+    <p class="app-note">
+      Note: Some apps may take a few seconds to load or require
+      reactivation if they have been inactive.
     </p>
 
+
+    <!-- CUSTOMER SEGMENTATION -->
+
     <div class="card">
+
       <h3>Customer Segmentation and Targeted Marketing</h3>
+
       <p>
-        Developed a customer segmentation system using retail transaction data to group customers into distinct behavioral segments. Built an interactive dashboard to explore segment characteristics and simulate how different targeting strategies could influence revenue and marketing impact.
+        Developed a customer segmentation system using retail
+        transaction data to group customers into distinct behavioral
+        segments. Built an interactive dashboard to explore segment
+        characteristics and simulate how different targeting
+        strategies could influence revenue and marketing impact.
       </p>
 
       <div>
+
         <span class="tag">Python</span>
         <span class="tag">Clustering</span>
         <span class="tag">Customer Segmentation</span>
         <span class="tag">Streamlit</span>
         <span class="tag">Marketing Analytics</span>
+
       </div>
 
-      <a href="https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/" target="_blank">View App</a> |
-      <a href="https://github.com/rmoazed/Customer-Segmentation-for-Targeted-Marketing" target="_blank">GitHub</a>
+      <a
+        href="https://customer-segmentation-for-targeted-marketing-77i5jdl9asjh45jze.streamlit.app/"
+        target="_blank"
+      >
+        View App
+      </a>
 
-      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+      |
+
+      <a
+        href="https://github.com/rmoazed/Customer-Segmentation-for-Targeted-Marketing"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <p class="preview-label">
         App Preview
       </p>
 
-      <img src="portfolio_images/dashboard_preview.png" style="width:100%; border-radius:10px; margin-top:15px;">
-      <img src="portfolio_images/pca_plot.png" style="width:100%; border-radius:10px; margin-top:15px;">
+      <img
+        src="portfolio_images/dashboard_preview.png"
+        alt="Customer segmentation dashboard"
+        class="project-image"
+      >
+
+      <img
+        src="portfolio_images/pca_plot.png"
+        alt="Customer segment PCA visualization"
+        class="project-image"
+      >
+
     </div>
 
+
+    <!-- BIKE DEMAND -->
+
     <div class="card">
+
       <h3>Bike Demand and Pricing Optimization</h3>
+
       <p>
-        Built a machine learning pipeline to predict bike rental demand and extended it into a pricing optimization framework using adjusted demand, elasticity and a baseline price. Created a Streamlit app to simulate pricing scenarios, estimate revenue impact, and show how pricing decisions interact with predicted demand.
+        Built a machine learning pipeline to predict bike rental
+        demand and extended it into a pricing optimization framework
+        using adjusted demand, elasticity, and a baseline price.
+        Created a Streamlit app to simulate pricing scenarios,
+        estimate revenue impact, and demonstrate how pricing
+        decisions interact with predicted demand.
       </p>
 
       <div>
+
         <span class="tag">Python</span>
         <span class="tag">Regression</span>
         <span class="tag">Pricing Optimization</span>
         <span class="tag">Streamlit</span>
         <span class="tag">Business Simulation</span>
+
       </div>
 
-      <a href="https://bike-rental-revenue-optimization-3ezz8dswejjajsle7fabh2.streamlit.app/" target="_blank">View App</a> |
-      <a href="https://github.com/rmoazed/Bike-Rental-Revenue-Optimization" target="_blank">GitHub</a>
+      <a
+        href="https://bike-rental-revenue-optimization-3ezz8dswejjajsle7fabh2.streamlit.app/"
+        target="_blank"
+      >
+        View App
+      </a>
 
-      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+      |
+
+      <a
+        href="https://github.com/rmoazed/Bike-Rental-Revenue-Optimization"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <p class="preview-label">
         App Preview
       </p>
 
-      <img src="portfolio_images/app_preview.png" style="width:100%; border-radius:10px; margin-top:15px;">
+      <img
+        src="portfolio_images/app_preview.png"
+        alt="Bike rental demand and pricing optimization dashboard"
+        class="project-image"
+      >
+
     </div>
 
+
+    <!-- BRAIN HEMORRHAGE -->
+
     <div class="card">
-      <h3>Brain Hemorrhage Segmentation and Classification</h3>
+
+      <h3>
+        Brain Hemorrhage Segmentation and Classification
+      </h3>
+
       <p>
-        Built a computer vision pipeline for brain hemorrhage image segmentation and classification using multi-view medical imaging data. This project involved intensive preprocessing, image-based modeling such as U-Net and ResU-Net models, and deployment through an interactive Streamlit app, and is one of my most technically intensive machine learning projects.
+        Built a computer vision pipeline for brain hemorrhage
+        segmentation and classification using multi-view medical
+        imaging data. The project involved intensive preprocessing,
+        multi-channel image modeling with U-Net and ResU-Net
+        architectures, segmentation evaluation, and deployment
+        through an interactive Streamlit application.
+      </p>
+
+      <p>
+        This project demonstrates deep-learning model development,
+        medical-image preprocessing, segmentation workflows, and
+        end-to-end deployment for a technically complex computer
+        vision problem.
       </p>
 
       <div>
+
         <span class="tag">Python</span>
         <span class="tag">Computer Vision</span>
+        <span class="tag">Deep Learning</span>
         <span class="tag">U-Net</span>
+        <span class="tag">ResU-Net</span>
         <span class="tag">Medical Imaging</span>
         <span class="tag">TensorFlow</span>
+
       </div>
 
-      <a href="https://brain-hemorrhage-segmentation-app-fxuflb7mf9tyusncpubyjp.streamlit.app/" target="_blank">View App</a> |
-      <a href="https://github.com/rmoazed/Brain-Hemorrhage-Segmentation-App" target="_blank">GitHub</a>
+      <a
+        href="https://brain-hemorrhage-segmentation-app-fxuflb7mf9tyusncpubyjp.streamlit.app/"
+        target="_blank"
+      >
+        View App
+      </a>
 
-      <p style="margin-top: 15px; font-size: 14px; color: #94a3b8;">
+      |
+
+      <a
+        href="https://github.com/rmoazed/Brain-Hemorrhage-Segmentation-App"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <p class="preview-label">
         App Preview
       </p>
-      <img src="portfolio_images/interface_pic.png" style="width:100%; border-radius:10px; margin-top:15px;">
+
+      <img
+        src="portfolio_images/interface_pic.png"
+        alt="Brain hemorrhage segmentation application"
+        class="project-image"
+      >
+
     </div>
+
+
+    <!-- SKILLS -->
 
     <h2>Skills</h2>
 
-    <div class="skill-group">
-      <span class="skill-title">Machine Learning & AI</span>
-      <p>scikit-learn, XGBoost, Recommendation Systems, Time Series Forecasting, Computer Vision, NLP, LLMs, Text Embeddings</p>
-    </div>
 
     <div class="skill-group">
-      <span class="skill-title">Data</span>
-      <p>Data Preprocessing, Feature Engineering, Model Evaluation, Forecast Evaluation, Customer Analytics, Retail Analytics</p>
+
+      <span class="skill-title">
+        Machine Learning & AI
+      </span>
+
+      <p>
+        scikit-learn, XGBoost, Support Vector Machines,
+        Recommendation Systems, Time Series Forecasting,
+        Computer Vision, NLP, LLMs, Text Embeddings,
+        Semantic Similarity, Deep Learning
+      </p>
+
     </div>
 
-    <div class="skill-group">
-      <span class="skill-title">Tools</span>
-      <p>Python, pandas, NumPy, Streamlit, Plotly, Data Visualization, GitHub</p>
-    </div>
 
     <div class="skill-group">
-      <span class="skill-title">Additional</span>
-      <p>Vector Databases, OpenAI API, Business Simulation, Dashboard Development</p>
+
+      <span class="skill-title">
+        NLP & Conversational AI
+      </span>
+
+      <p>
+        OpenAI API, Pinecone, Vector Databases,
+        Semantic Retrieval, Memory-Augmented AI,
+        sentence-transformers, Hugging Face Transformers,
+        Structured LLM Outputs, Prompt Design
+      </p>
+
     </div>
+
+
+    <div class="skill-group">
+
+      <span class="skill-title">
+        Data Science
+      </span>
+
+      <p>
+        Data Preprocessing, Feature Engineering,
+        Supervised Learning, Unsupervised Learning,
+        Model Evaluation, Forecast Evaluation,
+        Experimentation, Customer Analytics,
+        Retail Analytics
+      </p>
+
+    </div>
+
+
+    <div class="skill-group">
+
+      <span class="skill-title">
+        Tools
+      </span>
+
+      <p>
+        Python, pandas, NumPy, Streamlit, Plotly,
+        TensorFlow, Git, GitHub, Data Visualization
+      </p>
+
+    </div>
+
+
+    <div class="skill-group">
+
+      <span class="skill-title">
+        Applied Modeling
+      </span>
+
+      <p>
+        Forecasting, Optimization, Personalization,
+        Business Simulation, Dashboard Development,
+        Retrieval Systems, Model Comparison,
+        Decision Support
+      </p>
+
+    </div>
+
 
   </div>
+
 </body>
+
 </html>
