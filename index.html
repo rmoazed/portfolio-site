@@ -166,18 +166,19 @@
       I am a Master's student in Applied Mathematics at Northeastern
       University graduating in May 2027, with experience building
       end-to-end machine learning and AI systems for real-world
-      applications. My projects span forecasting, recommendation
-      systems, optimization, customer analytics, computer vision,
-      and conversational AI.
+      applications. My projects span multimodal AI, recommendation
+      and ranking systems, forecasting, optimization, customer
+      analytics, computer vision, and conversational AI.
     </p>
 
     <p>
-      I am particularly interested in applying machine learning to
-      problems involving personalization, customer behavior,
-      forecasting, intelligent decision systems, and business
-      optimization. I enjoy projects that combine rigorous modeling
-      with practical deployment, evaluation, and interactive tools
-      that translate model outputs into useful decisions.
+      I am particularly interested in applying statistical modeling,
+      machine learning, and modern AI systems to problems involving
+      personalization, customer behavior, recommendation, forecasting,
+      and intelligent decision systems. I enjoy projects that combine
+      rigorous modeling and experimentation with practical deployment,
+      evaluation, and interactive tools that translate model outputs
+      into useful decisions.
     </p>
 
 
@@ -191,45 +192,65 @@
     </p>
 
 
-    <!-- 1. RETAIL FORECASTING -->
+    <!-- 1. MULTIMODAL LIPSTICK RECOMMENDER -->
 
     <div class="card">
 
       <h3>
-        Retail Demand Forecasting & Inventory Optimization Dashboard
+        Multimodal AI Lipstick Recommendation System
       </h3>
 
       <p>
-        Built an end-to-end retail demand forecasting system using
-        the Favorita grocery sales dataset. The project compares
-        XGBoost models against naive time-series baselines, engineers
-        lag and rolling-window features, and translates forecasts
-        into inventory recommendations through an interactive
-        Streamlit dashboard.
+        Built and deployed an end-to-end multimodal recommendation
+        system that analyzes an uploaded outfit image and recommends
+        compatible lipsticks from a persistent product catalog.
       </p>
 
       <p>
-        The dashboard includes a forecasting command center,
-        actual-vs-predicted sales visualizations, product-family
-        comparisons, feature importance analysis, and an inventory
-        simulator that adjusts recommendations based on volatility
-        and business risk.
+        The system combines clothing segmentation, CIELAB perceptual
+        color analysis, and 23 engineered outfit-lipstick features
+        with a learned ranking model. To generate training supervision,
+        I used Qwen2.5-VL-7B as a multimodal weak-preference teacher,
+        evaluated lipstick pairs in both presentation orders, and
+        discarded order-sensitive judgments to reduce positional bias.
+      </p>
+
+      <p>
+        Stable pairwise preferences were converted into latent
+        compatibility utilities using Bradley-Terry modeling and then
+        distilled into a lightweight Ridge ranker. The production
+        system can therefore score an entire lipstick collection
+        without requiring the large multimodal model during inference.
+      </p>
+
+      <p>
+        After expanding development coverage from 22 to 71 independent
+        outfit contexts, the frozen ranker achieved 80.6% concordance
+        across 160 order-invariant multimodal teacher preferences on
+        10 prospectively held-out outfits. Final recommendations use
+        diversity-aware selection to balance predicted compatibility
+        with perceptual variety.
       </p>
 
       <div>
 
         <span class="tag">Python</span>
-        <span class="tag">XGBoost</span>
-        <span class="tag">Time Series</span>
+        <span class="tag">Multimodal AI</span>
+        <span class="tag">Computer Vision</span>
+        <span class="tag">Recommendation Systems</span>
+        <span class="tag">Preference Learning</span>
+        <span class="tag">Weak Supervision</span>
+        <span class="tag">Qwen2.5-VL</span>
+        <span class="tag">Bradley-Terry</span>
+        <span class="tag">Ridge Regression</span>
+        <span class="tag">CIELAB</span>
+        <span class="tag">PyTorch</span>
         <span class="tag">Streamlit</span>
-        <span class="tag">Retail Analytics</span>
-        <span class="tag">Forecasting</span>
-        <span class="tag">Inventory Optimization</span>
 
       </div>
 
       <a
-        href="https://retail-demand-forecasting-and-inventory-optimization-sj5pzd4tv.streamlit.app/"
+        href="https://multimodal-lipstickrecommendation-system-vmnnitsgpwpn9jwem3inu.streamlit.app/"
         target="_blank"
       >
         View App
@@ -238,7 +259,7 @@
       |
 
       <a
-        href="https://github.com/rmoazed/retail-demand-forecasting-and-inventory-optimization"
+        href="https://github.com/rmoazed/Multimodal-Lipstick_Recommendation-System"
         target="_blank"
       >
         GitHub
@@ -249,14 +270,14 @@
       </p>
 
       <img
-        src="portfolio_images/dash_1.png"
-        alt="Retail demand forecasting dashboard"
+        src="portfolio_images/lipstick_app_1.png"
+        alt="Multimodal lipstick recommendation application"
         class="project-image"
       >
 
       <img
-        src="portfolio_images/inventory_sim.png"
-        alt="Inventory optimization simulator"
+        src="portfolio_images/lipstick_app_2.png"
+        alt="Lipstick recommendation results"
         class="project-image"
       >
 
@@ -358,7 +379,89 @@
     </div>
 
 
-    <!-- 3. RECOMMENDER SYSTEM -->
+    <!-- 3. RETAIL FORECASTING -->
+
+    <div class="card">
+
+      <h3>
+        Retail Demand Forecasting & Inventory Optimization Dashboard
+      </h3>
+
+      <p>
+        Built an end-to-end retail demand forecasting system using
+        the Favorita grocery sales dataset. The project compares
+        XGBoost models against naive time-series baselines, engineers
+        lag and rolling-window features, and translates forecasts
+        into inventory recommendations through an interactive
+        Streamlit dashboard.
+      </p>
+
+      <p>
+        The dashboard includes a forecasting command center,
+        actual-vs-predicted sales visualizations, product-family
+        comparisons, feature importance analysis, and an inventory
+        simulator that adjusts recommendations based on volatility
+        and business risk.
+      </p>
+
+      <div>
+
+        <span class="tag">Python</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">Time Series</span>
+        <span class="tag">Streamlit</span>
+        <span class="tag">Retail Analytics</span>
+        <span class="tag">Forecasting</span>
+        <span class="tag">Inventory Optimization</span>
+
+      </div>
+
+      <a
+        href="https://retail-demand-forecasting-and-inventory-optimization-sj5pzd4tv.streamlit.app/"
+        target="_blank"
+      >
+        View App
+      </a>
+
+      |
+
+      <a
+        href="https://github.com/rmoazed/retail-demand-forecasting-and-inventory-optimization"
+        target="_blank"
+      >
+        GitHub
+      </a>
+
+      <p class="preview-label">
+        App Preview
+      </p>
+
+      <img
+        src="portfolio_images/dash_1.png"
+        alt="Retail demand forecasting dashboard"
+        class="project-image"
+      >
+
+      <img
+        src="portfolio_images/inventory_sim.png"
+        alt="Inventory optimization simulator"
+        class="project-image"
+      >
+
+    </div>
+
+
+    <!-- PROJECTS -->
+
+    <h2>Projects</h2>
+
+    <p class="app-note">
+      Note: Some apps may take a few seconds to load or require
+      reactivation if they have been inactive.
+    </p>
+
+
+    <!-- E-COMMERCE RECOMMENDER SYSTEM -->
 
     <div class="card">
 
@@ -423,16 +526,6 @@
       >
 
     </div>
-
-
-    <!-- PROJECTS -->
-
-    <h2>Projects</h2>
-
-    <p class="app-note">
-      Note: Some apps may take a few seconds to load or require
-      reactivation if they have been inactive.
-    </p>
 
 
     <!-- CUSTOMER SEGMENTATION -->
@@ -625,10 +718,29 @@
       </span>
 
       <p>
-        scikit-learn, XGBoost, Support Vector Machines,
-        Recommendation Systems, Time Series Forecasting,
-        Computer Vision, NLP, LLMs, Text Embeddings,
-        Semantic Similarity, Deep Learning
+        scikit-learn, XGBoost, PyTorch, TensorFlow,
+        Support Vector Machines, Ridge Regression,
+        Recommendation Systems, Ranking Models,
+        Preference Learning, Weak Supervision,
+        Time Series Forecasting, Computer Vision,
+        Multimodal AI, NLP, LLMs, Deep Learning
+      </p>
+
+    </div>
+
+
+    <div class="skill-group">
+
+      <span class="skill-title">
+        Multimodal AI & Computer Vision
+      </span>
+
+      <p>
+        Vision-Language Models, Qwen2.5-VL,
+        Image Segmentation, SegFormer,
+        CIELAB Color Analysis, CIEDE2000,
+        Perceptual Feature Engineering,
+        U-Net, ResU-Net, Multimodal Weak Supervision
       </p>
 
     </div>
@@ -644,7 +756,25 @@
         OpenAI API, Pinecone, Vector Databases,
         Semantic Retrieval, Memory-Augmented AI,
         sentence-transformers, Hugging Face Transformers,
-        Structured LLM Outputs, Prompt Design
+        Structured LLM Outputs, Text Embeddings,
+        Prompt Design
+      </p>
+
+    </div>
+
+
+    <div class="skill-group">
+
+      <span class="skill-title">
+        Statistical Modeling & Experimentation
+      </span>
+
+      <p>
+        Bradley-Terry Models, Pairwise Preference Modeling,
+        Regularized Regression, Model Distillation,
+        Prospective Holdout Evaluation, Baseline Comparison,
+        Model Evaluation, Experimental Design,
+        Bias and Stability Analysis
       </p>
 
     </div>
@@ -659,6 +789,7 @@
       <p>
         Data Preprocessing, Feature Engineering,
         Supervised Learning, Unsupervised Learning,
+        Clustering, Collaborative Filtering,
         Model Evaluation, Forecast Evaluation,
         Experimentation, Customer Analytics,
         Retail Analytics
@@ -674,8 +805,10 @@
       </span>
 
       <p>
-        Python, pandas, NumPy, Streamlit, Plotly,
-        TensorFlow, Git, GitHub, Data Visualization
+        Python, pandas, NumPy, scikit-learn,
+        PyTorch, TensorFlow, XGBoost, OpenCV,
+        Hugging Face Transformers, Streamlit, Plotly,
+        SQLite, Pinecone, Git, GitHub, Data Visualization
       </p>
 
     </div>
@@ -688,10 +821,11 @@
       </span>
 
       <p>
-        Forecasting, Optimization, Personalization,
-        Business Simulation, Dashboard Development,
-        Retrieval Systems, Model Comparison,
-        Decision Support
+        Recommendation and Ranking, Forecasting,
+        Optimization, Personalization, Business Simulation,
+        Dashboard Development, Retrieval Systems,
+        Model Comparison, Decision Support,
+        Production-Oriented ML Pipelines
       </p>
 
     </div>
